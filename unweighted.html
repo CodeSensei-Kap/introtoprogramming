@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="unweighted.html">Unweighted Calculator</a></li>
+            <li><a href="weighted.html">Weighted Calculator</a></li>
+            <li><a href="school.html">Williamsville East GPA System</a></li>
+            <li><a href="explanation.html">Importance of GPA</a></li>
+            <li><a href="history.html">History of the GPA</a></li>
+            <li style="float:right"><a class="active" href="about.html">Code Pics</a></li>
+          </ul>
+      </div>
+    <h1 class="page-headers">
+        Unweighted GPA Calculator
+    </h1>
+    <div class="wrapper">
+        <div class="form-row">
+            <div class="col">
+                <input id="course-code" class="form-control" type="text" placeholder="Course Code">
+            </div>
+            <div class="col">
+                <input id="unit-load" class="form-control" type="number" placeholder="Unit Load" min="1" max="3">
+            </div>
+            <div class="col">
+                <select id="grade" class="form-control">
+                    <option value="">Grade</option>
+                    <option value="5">A</option>
+                    <option value="4">B</option>
+                    <option value="3">C</option>
+                    <option value="2">D</option>
+                    <option value="1">E</option>
+                    <option value="0">F</option>
+                </select>
+            </div>
+            <div class="col">
+                <input id="add" class="btn btn-primary" type="button" value="Add">
+
+            </div>
+        </div>
+        <table id="table" class="table table-bordered display-none" bgColor="#E53D00">
+            <thead>
+                <tr>
+                    <th>Course Code</th>
+                    <th>Unit Load</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+        
+            </tbody>
+            <tfoot id="tfoot">
+        
+            </tfoot>
+        </table>
+        <div class="row">
+            <div class="col">
+                <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calculate GPA">
+            </div>
+            <div class="col">
+            <input id="clear" class="btn btn-warning display-none" type="button" value="Clear">
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
